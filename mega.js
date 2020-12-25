@@ -44,7 +44,7 @@ function geraBilhete(qtd,numeros)
                 }
             }
         }
-        document.getElementById('resultadofinal').innerText += "Resultado do bilhete "+(i+1)+": "+sorteado+"\n";
+        document.getElementById('resultadofinal').innerText += "Bilhete número "+(i+1)+": "+sorteado+"\n";
     }
 }
 function getRandom(min,max)
