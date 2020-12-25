@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bilhete_style.css">
+    <title>Gerador de Números da Mega-sena</title>
+</head>
+<body>
+    <div class="conteudo">
+        <img class="imgprincipal" src="img/clover.svg">
+        <p class="texto">Gerador de Números da Mega-sena.</p>
+        <p class="texto"> Digite quantos bilhetes deseja gerar.</p>
+        <input type="text" name="" id="numerodevezes" placeholder="Ex:1,2,3...">
+        <p class="texto" id="resultadofinal"></p>
+        <p class="texto">Selecione com quantos números deseja jogar cada bilhete:
+            <select id="numerossorteados">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+            </select>
+        </p>
+
+        <button onclick="geraBilhete(parseInt(document.getElementById('numerodevezes').value),parseInt(document.getElementById('numerossorteados').value))">Gerar</button>
+    </div>
+</body>
+<script src="mega.js">
+</script>
+</html>
